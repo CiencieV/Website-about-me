@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  background: url("../bb618db7d825e2e03c8d86f781a65e06.jpg")
+}
+main {
+  display: flex;
+}
+
+#mainsection{
+  display: flex;
+}
+#mainboardphoto{
+  width: 810px;
+  border-right: 5px black;
+  padding: 0 10px;
+}
+#mainboard{
+background: url("../img/mainboard2.png");
+width:1000px;
+height:1000px;
+background-size: 100% 100%;
+}
+#mainboard:hover{
+  animation-name: mainboard;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes mainboard {
+  0% {position: relative;top: 0}
+  50% {position: relative; top: 30px}
+  100% {position: relative;top: 0}
+}
+
+
+#cpu, #ram, #pcie, #m2, #sata, #io, #lan, #audio{
+  background-image: url("../img/kropka.svg");
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 318px;
+  left: 513px;
+}
+#cpu {
+  top: 318px;
+  left: 513px;
+}
+#ram {
+  top: 218px;
+  left: 683px;
+}
+#pcie {
+  top: 590px;
+  left: 400px;
+}
+#m2 {
+  top: 520px;
+  left: 400px;
+}
+#sata {
+  top: 670px;
+  left: 790px;
+}
+#io {
+  top: 200px;
+  left: 200px;
+}
+#lan {
+  top: 260px;
+  left: 200px;
+}
+#audio {
+  top: 750px;
+  left: 240px;
+}
+#cpu tooltip,
+#ram tooltip,
+#pcie tooltip,
+#m2 tooltip,
+#sata tooltip,
+#io tooltip,
+#lan tooltip,
+#audio tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#cpu .tooltiptext,
+#ram .tooltiptext,
+#pcie .tooltiptext,
+#m2 .tooltiptext,
+#sata .tooltiptext,
+#io .tooltiptext,
+#lan .tooltiptext,
+#audio .tooltiptext{
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+#cpu:hover .tooltiptext,
+#ram:hover .tooltiptext,
+#pcie:hover .tooltiptext,
+#m2:hover .tooltiptext,
+#sata:hover .tooltiptext,
+#io:hover .tooltiptext,
+#lan:hover .tooltiptext,
+#audio:hover .tooltiptext{
+  visibility: visible;
+}
+
+.tooltiptext img{
+  width: 150px;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+#chip{
+  background-image: url("../img/kropka.svg");
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 750px;
+  left: 700px;
+}
+#chip tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+#chip .tooltiptext{
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+#chip:hover .tooltiptext{
+  visibility: visible;
+}
+
+#eps{
+  background-image: url("../img/kropka.svg");
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 75px;
+  left: 340px;
+}
+
+#eps tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+#eps .tooltiptext{
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+#eps:hover .tooltiptext{
+  visibility: visible;
+}
+
+#pin{
+  background-image: url("../img/kropka.svg");
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 318px;
+  left: 783px;
+}
+
+#pin tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+#pin .tooltiptext{
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+#pin:hover .tooltiptext{
+  visibility: visible;
+}
+
+#mainlegend{
+  padding-left: 10px;
+  color: red;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+#cpuinfo {
+  background-image: url(../sockecik.png);
+  background-position: center;
+  padding: 10px;
+  width:80%;
+  height:400px;
+  color: aqua;
+  text-shadow: #000000 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+}
+
+#raminfo{
+  background-image: url(../ramik.jpg);
+  background-position: center;
+  padding: 10px;
+  width:65%;
+  height:400px;
+  color: cyan ;
+  text-shadow: #000000 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+}
+#pcieinfo{
+  background-image: url(../NZXT-N7-Z390-1.jpg);
+  background-position: center;
+  padding: 10px;
+  width:65%;
+  height:400px;
+  color: lawngreen;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+}
+#m2info{ background-image: url(../ebc0a59a-9f24-4010-b742-a0704bdbdab8.jpg);
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:200px;
+  color: lawngreen;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;
+}
+
+#satainfo{ background-image: url(../ASUS-P9X79-WS-SATA-Ports.png);
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:110px;
+  color: lawngreen;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+
+#ioinfo{background-color: black;
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:250px;
+  color: red;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+#laninfo{background-color: black;
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:200px;
+  color: red;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+#chipinfo{
+  background-color: black;
+  background-size: center;
+  padding: 10px;
+  width:10%;
+  height:290px;
+  color: lawngreen;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+#epsinfo{background-color: black;
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:90px;
+  color: red;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+#pininfo{background-color: black;
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:50px;
+  color: red;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
+#audioinfo {background-color: black;
+  background-size: 100%;
+  padding: 10px;
+  width:25%;
+  height:250px;
+  color: red;
+  text-shadow: black 2px 2px 5px;
+  font-size: 1.2em;
+  z-index: -120;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+  position: absolute;}
