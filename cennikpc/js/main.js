@@ -97,6 +97,11 @@ let mb = [
         name: "Gigabyte B550 AORUS ELITE",
         price: 660,
     },
+    {
+        id: 8,
+        name: "MSI B460 TOMAHAWK",
+        price: 600,
+    },
 ]
 
 var cart = [
