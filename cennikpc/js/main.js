@@ -38,27 +38,38 @@ let cpu = [
     {
         id: 1,
         name: "AMD Ryzen 5 3600",
-        price: 929
+        price: 929,
+        socket: "AM4",
     },
     {
         id: 2,
         name: "Intel Core i5-10400f",
-        price: 699
+        price: 699,
+        socket: "1200",
     },
     {
         id: 3,
         name: "AMD Ryzen 7 3700x",
-        price: 1359
+        price: 1359,
+        socket: "AM4",
     },
     {
         id: 4,
         name: "AMD Ryzen 9 3900X",
         price: 2000,
+        socket: "AM4",
     },
     {
         id: 5,
         name: "Intel Core i3-10300",
         price: 699,
+        socket: "1200",
+    },
+    {
+        id: 6,
+        name: "Intel Core i5-9600k",
+        price: 929,
+        socket: "1151",
     },
 ]
 let mb = [
@@ -66,41 +77,49 @@ let mb = [
         id: 1,
         name: "Gigabyte B450 AORUS ELITE",
         price: 409,
+        socket: "AM4",
     },
     {
         id: 2,
         name: "Gigabyte X570 GAMING X",
         price: 770,
+        socket: "AM4",
     },
     {
         id: 3,
         name: "Gigabyte GA-A320M-S2H",
         price: 240,
+        socket: "AM4",
     },
     {
         id: 4,
         name: "MSI MPG X570 GAMING PLUS",
         price: 780,
+        socket: "AM4",
     },
     {
         id: 5,
         name: "Gigabyte Z390 AORUS PRO",
         price: 830,
+        socket: "1151",
     },
     {
         id: 6,
         name: "MSI MPG X570 GAMING EDGE WIFI",
         price: 1000,
+        socket: "AM4",
     },
     {
         id: 7,
         name: "Gigabyte B550 AORUS ELITE",
         price: 660,
+        socket: "AM4",
     },
     {
         id: 8,
         name: "MSI B460 TOMAHAWK",
         price: 600,
+        socket: "1200",
     },
 ]
 
@@ -137,14 +156,16 @@ function SelectedItemValue(SelectId){
     const summaryGPU = document.getElementById("summaryGPU");
 
     if (SelectId == "mb") {
-        summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł"
+        summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + mb[strAtt - 1].socket + "socket"
         cart[0].price = mb[strAtt - 1].price
         cart[0].name = mb[strAtt - 1].name
+        cart[0].name = cpu[strAtt - 1].socket
     }
     else if (SelectId == "cpu") {
-        summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł"
+        summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + mb[strAtt - 1].socket + "socket"
         cart[1].price = cpu[strAtt - 1].price
         cart[1].name = cpu[strAtt - 1].name
+        cart[1].name = cpu[strAtt - 1].socket
     }
     else if (SelectId == "gpu") {
         summaryGPU.innerHTML = gpu[strAtt - 1].name + " " + gpu[strAtt - 1].price + "zł"
