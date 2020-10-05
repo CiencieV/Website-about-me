@@ -1,7 +1,23 @@
 const summaryCompHandler = document.getElementById("summaryComp")
 const Ala = summaryCompHandler.innerHTML
 
-
+let ram = [
+    {
+        id: 0,
+        name: "ADATA Gammix D10, DDR4, 16 GB, 3200MHz, CL16",
+        price: 289,
+    },
+    {
+        id: 1,
+        name: "GoodRam IRDM, DDR4, 16 GB, 3600MHz, CL17",
+        price: 319,
+    },
+    {
+        id: 2,
+        name: "Corsair Vengeance RGB PRO, DDR4, 16 GB, 3200MHz, CL16",
+        price: 370,
+    },
+]
 let gpu = [
     {
         id: 1,
@@ -136,6 +152,10 @@ var cart = [
         name: 'gpu',
         price: 0
     },
+    {
+        name: 'ram',
+        price: 0
+    },
     ]
 function addOpt(elem, optValue, textOpt){
     let select1 = document.getElementById(elem);
@@ -154,12 +174,13 @@ function SelectedItemValue(SelectId){
     const summaryMB = document.getElementById("summaryMB");
     const summaryCPU = document.getElementById("summaryCPU");
     const summaryGPU = document.getElementById("summaryGPU");
+    const summaryRAM = document.getElementById("summaryRAM");
 
     if (SelectId == "mb") {
         summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
         cart[0].price = mb[strAtt - 1].price
         cart[0].name = mb[strAtt - 1].name
-        cart[0].name = cpu[strAtt - 1].socket
+        cart[0].name = mb[strAtt - 1].socket
     }
     else if (SelectId == "cpu") {
         summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
@@ -172,11 +193,16 @@ function SelectedItemValue(SelectId){
         cart[2].price = gpu[strAtt - 1].price
         cart[2].name = gpu[strAtt - 1].name
     }
+    else if (SelectId == "ram") {
+        summaryRAM.innerHTML = ram[strAtt - 1].name + " " + ram[strAtt - 1].price + "zł"
+        cart[3].price = ram[strAtt - 1].price
+        cart[3].name = ram[strAtt - 1].name
+    }
     else
     {}
 
 
-    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price) + "</b>zł"
+    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price) + "</b>zł"
     //return(parseInt(strAtt));
 }
 
@@ -189,6 +215,10 @@ for(let i=0; i<gpu.length; i++){
 for(let i=0; i<cpu.length; i++){
     addOpt("cpu", cpu[i].id, cpu[i].name, cpu[i].price)
 }
+for(let i=0; i<ram.length; i++){
+    addOpt("ram", ram[i].id, ram[i].name, ram[i].price)
+}
+
 
 
 
