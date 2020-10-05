@@ -50,6 +50,11 @@ let cpu = [
         name: "AMD Ryzen 9 3900X",
         price: 2000,
     },
+    {
+        id: 5,
+        name: "Intel Core i3-10300",
+        price: 699,
+    },
 ]
 let mb = [
     {
