@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+}
+#main{
+    background-color: pink;
+    font-size: 25px;
+}
+#other{
+    color: white;
+    text-shadow: black;
+    font-size: 40px;
+}
+#text{}

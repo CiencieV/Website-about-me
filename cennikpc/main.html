@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+    <section id="select">
+        <table>
+            <tr>
+                <td>Płyta główna</td>
+                <td>
+                    <select name="mb" id="mb" onchange="SelectedItemValue('mb')">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>GPU</td>
+                <td>
+                    <select name="gpu" id="gpu" onchange="SelectedItemValue('gpu')">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>
+                    <select name="cpu" id="cpu" onchange="SelectedItemValue('cpu')">
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="summaryComp">
+        <div id="summaryMB"></div>
+        <div id="summaryCPU"></div>
+        <div id="summaryGPU"></div>
+    </section>
+    <div id="summaryMainB"></div>
+    <div id="summaryCpu"></div>
+    <div id="sumALL"></div>
+
+<script src="js/main.js"></script>
+</main>
+</body>
+</html>
