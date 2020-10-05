@@ -1,6 +1,30 @@
 const summaryCompHandler = document.getElementById("summaryComp")
 const Ala = summaryCompHandler.innerHTML
 
+
+
+let psu = [
+    {
+        id: 0,
+        name: "SilentiumPC Vero L3 500W",
+        price: 219,
+    },
+    {
+        id: 1,
+        name: "be quiet! Straight Power 11 1000W ",
+        price: 850,
+    },
+    {
+        id: 2,
+        name: "Thermaltake PS-SPR-0700NHSAWE-1 700W",
+        price: 340,
+    },
+    {
+        id: 3,
+        name: "Corsair RM750x 750W",
+        price: 619,
+    },
+]
 let ram = [
     {
         id: 0,
@@ -156,6 +180,10 @@ var cart = [
         name: 'ram',
         price: 0
     },
+    {
+        name: 'psu',
+        price: 0
+    },
     ]
 function addOpt(elem, optValue, textOpt){
     let select1 = document.getElementById(elem);
@@ -175,6 +203,7 @@ function SelectedItemValue(SelectId){
     const summaryCPU = document.getElementById("summaryCPU");
     const summaryGPU = document.getElementById("summaryGPU");
     const summaryRAM = document.getElementById("summaryRAM");
+    const summaryPSU = document.getElementById("summaryPSU");
 
     if (SelectId == "mb") {
         summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
@@ -198,11 +227,16 @@ function SelectedItemValue(SelectId){
         cart[3].price = ram[strAtt - 1].price
         cart[3].name = ram[strAtt - 1].name
     }
+    else if (SelectId == "psu") {
+        summaryRAM.innerHTML = psu[strAtt - 1].name + " " + psu[strAtt - 1].price + "zł"
+        cart[4].price = psu[strAtt - 1].price
+        cart[4].name = psu[strAtt - 1].name
+    }
     else
     {}
 
 
-    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price) + "</b>zł"
+    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price) + "</b>zł"
     //return(parseInt(strAtt));
 }
 
@@ -218,7 +252,9 @@ for(let i=0; i<cpu.length; i++){
 for(let i=0; i<ram.length; i++){
     addOpt("ram", ram[i].id, ram[i].name, ram[i].price)
 }
-
+for(let i=0; i<psu.length; i++){
+    addOpt("psu", psu[i].id, psu[i].name, psu[i].price)
+}
 
 
 
