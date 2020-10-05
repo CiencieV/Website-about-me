@@ -228,9 +228,9 @@ function SelectedItemValue(SelectId){
         cart[3].name = ram[strAtt - 1].name
     }
     else if (SelectId == "psu") {
-        summaryRAM.innerHTML = psu[strAtt - 1].name + " " + psu[strAtt - 1].price + "zł"
-        cart[4].price = psu[strAtt - 1].price
-        cart[4].name = psu[strAtt - 1].name
+        summaryRAM.innerHTML = psu[strAtt].name + " " + psu[strAtt].price + "zł"
+        cart[4].price = psu[strAtt].price
+        cart[4].name = psu[strAtt].name
     }
     else
     {}
