@@ -28,6 +28,11 @@ let gpu = [
         name: "Gainward GeForce RTX 3090 Phoenix GS 24GB GDDR6X",
         price: 8169,
     },
+    {
+      id: 6,
+      name: "XFX Radeon RX 590 Fatboy 8GB GDDR5 ",
+        price: 939,
+    },
 ]
 let cpu = [
     {
