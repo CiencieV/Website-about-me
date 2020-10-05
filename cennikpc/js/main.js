@@ -156,13 +156,13 @@ function SelectedItemValue(SelectId){
     const summaryGPU = document.getElementById("summaryGPU");
 
     if (SelectId == "mb") {
-        summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + mb[strAtt - 1].socket + "socket"
+        summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
         cart[0].price = mb[strAtt - 1].price
         cart[0].name = mb[strAtt - 1].name
         cart[0].name = cpu[strAtt - 1].socket
     }
     else if (SelectId == "cpu") {
-        summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + mb[strAtt - 1].socket + "socket"
+        summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
         cart[1].price = cpu[strAtt - 1].price
         cart[1].name = cpu[strAtt - 1].name
         cart[1].name = cpu[strAtt - 1].socket
