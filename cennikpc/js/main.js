@@ -176,6 +176,24 @@ let mb = [
         socket: "1200",
     },
 ]
+let ssd = [
+    {
+        id: 0,
+        name: "Western Digital Blue 500 GB 2.5'' SATA III",
+        price: 279,
+    },
+    {
+        id: 1,
+        name: "Crucial MX500 1 TB 2.5'' SATA III",
+        price: 549,
+    },
+    {
+        id: 2,
+        name: "Samsung 860 EVO 1 TB 2.5'' SATA III",
+        price: 620,
+    },
+]
+
 
 var cart = [
     {
@@ -202,6 +220,10 @@ var cart = [
         name: 'casef',
         price: 0
     },
+    {
+        name: 'ssd',
+        price: 0
+    },
     ]
 function addOpt(elem, optValue, textOpt){
     let select1 = document.getElementById(elem);
@@ -223,6 +245,7 @@ function SelectedItemValue(SelectId){
     const summaryRAM = document.getElementById("summaryRAM");
     const summaryPSU = document.getElementById("summaryPSU");
     const summaryCASEF = document.getElementById("summaryCASEF");
+    const summarySSD = document.getElementById("summarySSD");
 
     if (SelectId == "mb") {
         summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
@@ -252,15 +275,20 @@ function SelectedItemValue(SelectId){
         cart[4].name = psu[strAtt].name
     }
     else if (SelectId == "casef") {
-        summaryRAM.innerHTML = casef[strAtt].name + " " + casef[strAtt].price + "zł"
+        summaryCASEF.innerHTML = casef[strAtt].name + " " + casef[strAtt].price + "zł"
         cart[5].price = casef[strAtt].price
         cart[5].name = casef[strAtt].name
+    }
+    else if (SelectId == "ssd") {
+        summarySSD.innerHTML = ssd[strAtt].name + " " + ssd[strAtt].price + "zł"
+        cart[6].price = ssd[strAtt].price
+        cart[6].name = ssd[strAtt].name
     }
     else
     {}
 
 
-    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price+cart[5].price) + "</b>zł"
+    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price+cart[5].price+cart[6].price) + "</b>zł"
     //return(parseInt(strAtt));
 }
 
@@ -281,6 +309,9 @@ for(let i=0; i<psu.length; i++){
 }
 for(let i=0; i<casef.length; i++){
     addOpt("casef", casef[i].id, casef[i].name, casef[i].price)
+}
+for(let i=0; i<ssd.length; i++){
+    addOpt("ssd", ssd[i].id, ssd[i].name, ssd[i].price)
 }
 
 
