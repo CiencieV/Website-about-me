@@ -1,7 +1,4 @@
 const summaryCompHandler = document.getElementById("summaryComp")
-const Ala = summaryCompHandler.innerHTML
-
-
 
 let psu = [
     {
@@ -40,6 +37,23 @@ let ram = [
         id: 2,
         name: "Corsair Vengeance RGB PRO, DDR4, 16 GB, 3200MHz, CL16",
         price: 370,
+    },
+]
+let casef = [
+    {
+        id: 0,
+        name: "SilentiumPC Signum SG7V Evo TG ARGB",
+        price: 389,
+    },
+    {
+        id: 1,
+        name: "MSI MAG Forge 100M",
+        price: 209,
+    },
+    {
+        id: 2,
+        name: "be quiet! Pure Base 600",
+        price: 360,
     },
 ]
 let gpu = [
@@ -184,6 +198,10 @@ var cart = [
         name: 'psu',
         price: 0
     },
+    {
+        name: 'casef',
+        price: 0
+    },
     ]
 function addOpt(elem, optValue, textOpt){
     let select1 = document.getElementById(elem);
@@ -204,6 +222,7 @@ function SelectedItemValue(SelectId){
     const summaryGPU = document.getElementById("summaryGPU");
     const summaryRAM = document.getElementById("summaryRAM");
     const summaryPSU = document.getElementById("summaryPSU");
+    const summaryCASEF = document.getElementById("summaryCASEF");
 
     if (SelectId == "mb") {
         summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
@@ -232,11 +251,16 @@ function SelectedItemValue(SelectId){
         cart[4].price = psu[strAtt].price
         cart[4].name = psu[strAtt].name
     }
+    else if (SelectId == "casef") {
+        summaryRAM.innerHTML = casef[strAtt].name + " " + casef[strAtt].price + "zł"
+        cart[5].price = casef[strAtt].price
+        cart[5].name = casef[strAtt].name
+    }
     else
     {}
 
 
-    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price) + "</b>zł"
+    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price+cart[5].price) + "</b>zł"
     //return(parseInt(strAtt));
 }
 
@@ -254,6 +278,9 @@ for(let i=0; i<ram.length; i++){
 }
 for(let i=0; i<psu.length; i++){
     addOpt("psu", psu[i].id, psu[i].name, psu[i].price)
+}
+for(let i=0; i<casef.length; i++){
+    addOpt("casef", casef[i].id, casef[i].name, casef[i].price)
 }
 
 
