@@ -16,3 +16,7 @@ body{
     margin-bottom: 10px;
     font-size: 25px;
 }
+#summaryComp img{
+    width: 200px;
+    heigh: auto;
+}

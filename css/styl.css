@@ -1,5 +1,5 @@
 body{
-    background: url("img/wp1894821.jpg")
+    background: url("../img/wp1894821.jpg")
 }
 #main{
     background-color: pink;
@@ -16,7 +16,7 @@ body{
     border: 1px solid white;
     border-collapse: collapse;
 }
-#summaryComp img {
+#summaryComp div img {
     width: 30%;
     height: auto;
 }

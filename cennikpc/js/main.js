@@ -247,7 +247,14 @@ function addOpt(elem, optValue, textOpt){
     option.appendChild(textOption);
     select1.appendChild(option);
 }
+function sumCart(koszyk){
+    console.log("Ilość elementów w koszyku: "+koszyk.lenght)
+    let cena = 0;
+    for(let i=0; i<koszyk.lenght; i++)
+        cena = cena + koszyk[i].price
 
+    return cena;
+}
 function SelectedItemValue(SelectId){
     const selectedItem = document.getElementById(SelectId)
     let strAtt = selectedItem.options[selectedItem.selectedIndex].getAttribute('name');
@@ -305,6 +312,11 @@ function SelectedItemValue(SelectId){
     document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price+cart[5].price+cart[6].price) + "</b>zł"
     //return(parseInt(strAtt));
 }
+
+function sumCart(cart){
+    console.log("Ilość elementów w koszyku: "+cart.lenght)
+}
+
 
 for(let i=0; i<mb.length; i++){
     addOpt("mb", mb[i].id, mb[i].name, mb[i].price)
