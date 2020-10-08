@@ -44,16 +44,19 @@ let casef = [
         id: 0,
         name: "SilentiumPC Signum SG7V Evo TG ARGB",
         price: 389,
+        img: "sg7vevo.jpg"
     },
     {
         id: 1,
         name: "MSI MAG Forge 100M",
         price: 209,
+        img: "msifag.jpg"
     },
     {
         id: 2,
         name: "be quiet! Pure Base 600",
         price: 360,
+        img: "bqpb6.jpg"
     },
 ]
 let gpu = [
@@ -132,48 +135,56 @@ let mb = [
         name: "Gigabyte B450 AORUS ELITE",
         price: 409,
         socket: "AM4",
+        img: "b450ae.jpg"
     },
     {
         id: 2,
         name: "Gigabyte X570 GAMING X",
         price: 770,
         socket: "AM4",
+        img: "gx57gx.jpg"
     },
     {
         id: 3,
         name: "Gigabyte GA-A320M-S2H",
         price: 240,
         socket: "AM4",
+        img: "ga32ms2.jpg"
     },
     {
         id: 4,
         name: "MSI MPG X570 GAMING PLUS",
         price: 780,
         socket: "AM4",
+        img: "mmx57gp.jpg"
     },
     {
         id: 5,
         name: "Gigabyte Z390 AORUS PRO",
         price: 830,
         socket: "1151",
+        img: "gz39ap.jpg"
     },
     {
         id: 6,
         name: "MSI MPG X570 GAMING EDGE WIFI",
         price: 1000,
         socket: "AM4",
+        img: "mmx57gew.jpg"
     },
     {
         id: 7,
         name: "Gigabyte B550 AORUS ELITE",
         price: 660,
         socket: "AM4",
+        img: "gb55ae.jpg"
     },
     {
         id: 8,
         name: "MSI B460 TOMAHAWK",
         price: 600,
         socket: "1200",
+        img: "mb46t.jpg"
     },
 ]
 let ssd = [
@@ -181,16 +192,19 @@ let ssd = [
         id: 0,
         name: "Western Digital Blue 500 GB 2.5'' SATA III",
         price: 279,
+        img: "wdblussd.jpg"
     },
     {
         id: 1,
         name: "Crucial MX500 1 TB 2.5'' SATA III",
         price: 549,
+        img: "979472_0_i1064.jpg"
     },
     {
         id: 2,
         name: "Samsung 860 EVO 1 TB 2.5'' SATA III",
         price: 620,
+        img: "samsungssd1tb.jpg"
     },
 ]
 
@@ -248,39 +262,39 @@ function SelectedItemValue(SelectId){
     const summarySSD = document.getElementById("summarySSD");
 
     if (SelectId == "mb") {
-        summaryMB.innerHTML = mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
+        summaryMB.innerHTML = "<td><img src='img/"+mb[strAtt - 1].img+"'></td>"+mb[strAtt - 1].name + " " + mb[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
         cart[0].price = mb[strAtt - 1].price
         cart[0].name = mb[strAtt - 1].name
         cart[0].name = mb[strAtt - 1].socket
     }
     else if (SelectId == "cpu") {
-        summaryCPU.innerHTML = cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
+        summaryCPU.innerHTML = "<td><img src='img/"+cpu[strAtt - 1].img+"'></td>"+cpu[strAtt - 1].name + " " + cpu[strAtt - 1].price + "zł" + " " + "Socket" + " " + mb[strAtt - 1].socket
         cart[1].price = cpu[strAtt - 1].price
         cart[1].name = cpu[strAtt - 1].name
         cart[1].name = cpu[strAtt - 1].socket
     }
     else if (SelectId == "gpu") {
-        summaryGPU.innerHTML = gpu[strAtt - 1].name + " " + gpu[strAtt - 1].price + "zł"
+        summaryGPU.innerHTML = "<td><img src='img/"+gpu[strAtt - 1].img+"'></td>"+gpu[strAtt - 1].name + " " + gpu[strAtt - 1].price + "zł"
         cart[2].price = gpu[strAtt - 1].price
         cart[2].name = gpu[strAtt - 1].name
     }
     else if (SelectId == "ram") {
-        summaryRAM.innerHTML = ram[strAtt - 1].name + " " + ram[strAtt - 1].price + "zł"
+        summaryRAM.innerHTML = "<td><img src='img/"+ram[strAtt - 1].img+"'></td>"+ram[strAtt - 1].name + " " + ram[strAtt - 1].price + "zł"
         cart[3].price = ram[strAtt - 1].price
         cart[3].name = ram[strAtt - 1].name
     }
     else if (SelectId == "psu") {
-        summaryRAM.innerHTML = psu[strAtt].name + " " + psu[strAtt].price + "zł"
+        summaryRAM.innerHTML = "<td><img src='img/"+psu[strAtt].img+"'></td>"+psu[strAtt].name + " " + psu[strAtt].price + "zł"
         cart[4].price = psu[strAtt].price
         cart[4].name = psu[strAtt].name
     }
     else if (SelectId == "casef") {
-        summaryCASEF.innerHTML = casef[strAtt].name + " " + casef[strAtt].price + "zł"
+        summaryCASEF.innerHTML = "<td><img src='img/"+casef[strAtt].img+"'></td>"+casef[strAtt].name + " " + casef[strAtt].price + "zł"
         cart[5].price = casef[strAtt].price
         cart[5].name = casef[strAtt].name
     }
     else if (SelectId == "ssd") {
-        summarySSD.innerHTML = ssd[strAtt].name + " " + ssd[strAtt].price + "zł"
+        summarySSD.innerHTML = "<td><img src='img/"+ssd[strAtt].img+"'></td>"+ ssd[strAtt].name + " " + ssd[strAtt].price + "zł"
         cart[6].price = ssd[strAtt].price
         cart[6].name = ssd[strAtt].name
     }

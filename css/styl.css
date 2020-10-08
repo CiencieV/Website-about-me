@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background: url("img/wp1894821.jpg")
 }
 #main{
     background-color: pink;
@@ -11,3 +11,12 @@ body{
     font-size: 40px;
 }
 #text{}
+
+#summaryComp, #summaryComp td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+#summaryComp img {
+    width: 30%;
+    height: auto;
+}
