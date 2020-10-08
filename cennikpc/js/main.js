@@ -247,14 +247,18 @@ function addOpt(elem, optValue, textOpt){
     option.appendChild(textOption);
     select1.appendChild(option);
 }
-function sumCart(koszyk){
-    console.log("Ilość elementów w koszyku: "+koszyk.lenght)
+function sumAll(cart){
+    console.log("Ilość elementów w koszyku: "+cart.length)
+
     let cena = 0;
-    for(let i=0; i<koszyk.lenght; i++)
-        cena = cena + koszyk[i].price
+
+    for(let i=0; i<cart.length; i++)
+        cena = cena + cart[i].price
 
     return cena;
 }
+
+
 function SelectedItemValue(SelectId){
     const selectedItem = document.getElementById(SelectId)
     let strAtt = selectedItem.options[selectedItem.selectedIndex].getAttribute('name');
@@ -307,15 +311,9 @@ function SelectedItemValue(SelectId){
     }
     else
     {}
-
-
-    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ (cart[0].price+cart[1].price+cart[2].price+cart[3].price+cart[4].price+cart[5].price+cart[6].price) + "</b>zł"
-    //return(parseInt(strAtt));
+    document.getElementById("sumALL").innerHTML="<b>Suma koszyka: "+ sumAll(cart) + "</b>zł"
 }
 
-function sumCart(cart){
-    console.log("Ilość elementów w koszyku: "+cart.lenght)
-}
 
 
 for(let i=0; i<mb.length; i++){
