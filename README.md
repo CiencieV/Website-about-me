@@ -1,4 +1,4 @@
-#  Strona HTML 
+#  Strony HTML tworzone przeze mnie dostępne pod adresami poniżej
 #  Strona jest dostępna pod adresem: https://cienciev.github.io/HTML/
 # Strona zawiera:
 # Konfigurator PC z cennikiem https://cienciev.github.io/HTML/cennikpc/index.html
