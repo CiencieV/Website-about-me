@@ -40,6 +40,7 @@ table#summaryComp {
     width: 70%;
     margin: 0 auto;
     margin-top: 10px;
+    background-color: rgba(128,128,128, 0.2)
 }
 table#summaryComp td{
     text-align: center;
