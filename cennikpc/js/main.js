@@ -463,7 +463,7 @@ function SelectedItemValue(SelectId){
     const summaryFOTEL = document.getElementById("summaryFOTEL");
 
     if (SelectId == "mb") {
-        summaryMB.innerHTML = "<td><img src='img/"+mb[strAtt - 1].img+"'></td><td>"+mb[strAtt - 1].name + "</td><td>" + mb[strAtt - 1].price + "zł</td>" + "<td>" + "Socket" + "</td>" + mb[strAtt - 1].socket + "</td>"
+        summaryMB.innerHTML = "<td><img src='img/"+mb[strAtt - 1].img+"'></td><td>"+mb[strAtt - 1].name + "</td><td>" + mb[strAtt - 1].price + "zł</td>" + "<td>" + "Socket" + "</td><td>" + mb[strAtt - 1].socket + "</td>"
         cart[0].price = mb[strAtt - 1].price
         cart[0].name = mb[strAtt - 1].name
         cart[0].name = mb[strAtt - 1].socket

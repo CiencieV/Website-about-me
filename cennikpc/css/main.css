@@ -22,4 +22,54 @@ body{
     width: 200px;
     heigh: auto;
 }
-
+#sumALL{
+    width: 200px;
+    background-color: lawngreen;
+    font-size: 1.22em;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+table#summaryComp {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+table#summaryComp td{
+    text-align: center;
+}
+table#summaryComp td:nth-child(1){
+    width: 20%
+}
+table#summaryComp td:nth-child(2){
+    width: 30%
+}
+table#summaryComp td:nth-child(3){
+    width: 30%
+}
+table#summaryComp td:nth-child(4){
+    width: 30%
+}
+table#summaryComp td:nth-child(5){
+    width: 30%
+}
+table#summaryComp td:nth-child(6){
+    width: 30%
+}
+table#summaryComp td:nth-child(7){
+    width: 30%
+}
+table#summaryComp td:nth-child(8){
+    width: 30%
+}
+table#summaryComp td:nth-child(9){
+    width: 30%
+}
+table#summaryComp td:nth-child(10){
+    width: 30%
+}
+table#summaryComp td:nth-child(11){
+    width: 30%
+}
