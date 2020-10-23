@@ -10,7 +10,6 @@ body{
     text-shadow: black;
     font-size: 40px;
 }
-#text{}
 article{
     display: flex;
     border-style: double;
