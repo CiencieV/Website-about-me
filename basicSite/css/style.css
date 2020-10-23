@@ -1,0 +1,47 @@
+body {
+    background-color: e5e4e4;
+    color: black;
+}
+div#container{
+    display: flex;
+    width: 100%;
+}
+p {
+    border: 1px solid red;
+    padding:4px;
+}
+
+#mainHeader, #mainNav{
+    padding: 10px;
+    border:2px solid #24919a;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header#mainHeader{
+   background-color: #d7f1f5;
+    color:#24919a;
+    border:2px solid #24919a;
+    width: 100%;
+}
+
+nav#mainNav{
+    background-color: #f2cdf6;
+    color:#9c34a2;
+    border:2px solid #9c34a2;
+    width: 100%;
+}
+
+#mainSite{
+    border:1px solid green;
+    width: 70%;
+    height:700px;
+}
+
+#mainAside{
+    background-color: lightblue;
+    border:2px solid blue;
+    width: 26%;
+    height:700px;
+}

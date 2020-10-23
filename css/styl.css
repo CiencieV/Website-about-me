@@ -39,3 +39,15 @@ footer{
     border-style: solid;
     border-color: black;
 }
+
+header{
+    margin-top: 10px;
+    font-size: 20px;
+    border-style: ridge;
+    border-color: palevioletred;
+    background-color: plum;
+}
+nav{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
