@@ -13,6 +13,10 @@ body{
 #text{}
 article{
     display: flex;
+    border-style: double;
+    border-color: palegreen;
+    border-width: 5px;
+    background-color: palevioletred;
 }
 #first{
     font-size: 30px;
