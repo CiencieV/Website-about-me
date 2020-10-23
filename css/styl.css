@@ -11,3 +11,28 @@ body{
     font-size: 40px;
 }
 #text{}
+article{
+    display: flex;
+}
+#first{
+    font-size: 30px;
+    
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-top: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    border-style: dotted;
+    border-color: red;
+  }
+
+footer{
+    margin-bottom: 10px;
+    float: left;
+    background-color: burlywood;
+    border-style: solid;
+    border-color: black;
+}
