@@ -1,11 +1,5 @@
-html{
-    overflow-y: scroll;
-}
-
 body{
     background: #199477;
-    max-width: 1000px;
-    margin: auto;
 }
 
 #objekt{
@@ -28,7 +22,9 @@ img{
     width: 50%;
     height: auto;
 }
-
+#first{
+    font-size: 25px;
+}
 #second{
-    font-size:10px;
+    font-size:15px;
 }
