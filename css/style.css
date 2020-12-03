@@ -6,6 +6,8 @@ body{
     background: #199477;
     max-width: 1000px;
     margin: auto;
+    padding-left: 3%;
+	padding-right: 3%;
 }
 
 #objekt{
