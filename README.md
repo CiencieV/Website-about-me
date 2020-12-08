@@ -2,4 +2,5 @@
 # Strona HTML którą tworzę jest dostępna tutaj
 -  Strona którą tworzę jest dostępna pod adresem: https://cienciev.github.io/HTML/
 
-# This site is only in Polish, maybe in the future it will be in English. For now I'm sorry for that
+# Site in HTML that I'm making is available here:
+- Webpage that I'm making is available at this address: https://cienciev.github.io/HTML/pages/eindex.html
