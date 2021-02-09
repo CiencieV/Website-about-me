@@ -1,5 +1,5 @@
 body{
-    background: gray;
+    background: #182a4a;
 }
 #main{
     background-color: pink;
@@ -40,8 +40,8 @@ header{
     margin-top: 10px;
     font-size: 20px;
     border-style: ridge;
-    border-color: palevioletred;
-    background-color: plum;
+    border-color: #669900;
+    background-color: #039dfc;
 }
 nav{
     margin-bottom: 10px;
@@ -52,7 +52,7 @@ nav{
     text-shadow: black;
     font-size: 40px;
     border: solid;
-    border-color: rebeccapurple;
+    border-color: #575557;
 }
 
 .topnav {
@@ -73,7 +73,7 @@ nav{
     color: black;
 }
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #7A9882;
     color: white;
 }
 .topnav .icon {
