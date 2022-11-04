@@ -8,28 +8,8 @@ body{
     margin: auto;
     padding-left: 3%;
 	padding-right: 3%;
+    text-align: center;
 }
 
-#objekt{
-    background-color: #1d8f74;
-}
 
-nav{
-    border-color: black;
-    font-size: 20px;
-}
-#sectio{
-    font-size: 40px;
-}
-img{
-    border-color: black;
-    font-size: 20px;
-    border-style: solid;
-    border-width: 5px;
-    width: 50%;
-    height: auto;
-}
 
-#second{
-    font-size:10px;
-}
