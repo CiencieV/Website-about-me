@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background: #199477;
+    background:#155661;
     max-width: 1000px;
     margin: auto;
     padding-left: 3%;
@@ -13,3 +13,6 @@ body{
 
 
 
+#mainself, #navain{
+	font-size: 30px;
+}
