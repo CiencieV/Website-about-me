@@ -4,8 +4,7 @@ html{
 }
 
 body{
-    background: rgb(42,164,199);
-    background: linear-gradient(242deg, rgba(42,164,199,1) 0%, rgba(27,129,70,1) 50%, rgba(37,53,120,1) 100%); 
+    background: rgb(78, 125, 194);
     max-width: 1000px;
     margin: auto;
     padding-left: 3%;
