@@ -3,7 +3,11 @@ html{
 }
 
 body{
-    background: #5a83cf;
+    background: rgb(56,131,48);
+    background: -moz-radial-gradient(circle, rgba(56,131,48,1) 0%, rgba(27,129,109,1) 35%, rgba(38,35,133,1) 44%, rgba(37,87,120,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(56,131,48,1) 0%, rgba(27,129,109,1) 35%, rgba(38,35,133,1) 44%, rgba(37,87,120,1) 100%);
+    background: radial-gradient(circle, rgba(56,131,48,1) 0%, rgba(27,129,109,1) 35%, rgba(38,35,133,1) 44%, rgba(37,87,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#388330",endColorstr="#255778",GradientType=1); 
     max-width: 1000px;
     margin: auto;
     padding-left: 3%;
