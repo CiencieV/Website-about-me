@@ -4,7 +4,8 @@ html{
 }
 
 body{
-    background: rgb(78, 125, 194);
+    background: #00fbff;
+    background: radial-gradient(circle, rgba(0, 251, 255, 1) 5%, rgba(36, 166, 110, 1) 52%, rgba(0, 0, 0, 1) 100%);
     max-width: 1000px;
     margin: auto;
     padding-left: 3%;
